@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="BROWSER" value="edge"/>
+    <classes>
+      <class name="com.crc.Products.CreateProductstest">
+        <methods>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AT"/>
+          <include name="AM"/>
+          <include name="CreateProductsTest"/>
+          <include name="BM"/>
+        </methods>
+      </class> <!-- com.crc.Products.CreateProductstest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.Organization.Createorganizationtest">
+        <methods>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AT"/>
+          <include name="createorganizationTest"/>
+          <include name="AM"/>
+          <include name="BM"/>
+        </methods>
+      </class> <!-- com.crm.Organization.Createorganizationtest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
